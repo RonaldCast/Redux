@@ -1,0 +1,19 @@
+Redux: con este podemos definir un estado compartido. Es independiente de react 
+El store posee tres metodos 
+1. subscribe(fn): nos permite subscribienos al store para ser informado sobre el estado 
+2. dispatch(action): nos permite solicitar cambio al estado, actulizarlo 
+3. getState(): nos permite obtener el estado actual 
+
+El store se crea con el método createStore(reducerFn)
+
+1. la funcion reductora reciben un estado , una accion y retornan un nuevo estado 
+El stores siempre invoca la funcion redutora siempre que recibe una llamada al metodo dispatch(action) 
+
+Actions: estos son los objectos que se le pasan al metodo dispatch
+►se utiliza la llave type para definir la accion que se quiere realizar.
+►los demas son parametro que se le pasan a la funcion 
+Ejemplos: {type: "EDIT_PLACE", place: updatePlace}
+
+Action Creators: Funciones que retornan un action, son opcionales 
+store.dispatch(type: "ADD_CART", product: product) 
+====> store.dispatch(addtoCart(product))
