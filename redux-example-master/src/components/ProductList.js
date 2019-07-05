@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
+import store from '../store'
+import { addToCart } from "../actionCreators";
 
 const styles = {
   products: {
@@ -48,6 +50,8 @@ class ProductList extends Component {
 
   addToCart(product) {
 
+    //dispath para a;adir a redux
+    store.dispatch(addToCart(product));
   }
 }
 
