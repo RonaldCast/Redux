@@ -1,7 +1,7 @@
 Redux: con este podemos definir un estado compartido. Es independiente de react 
 El store posee tres metodos 
-1. subscribe(fn): nos permite subscribienos al store para ser informado sobre el estado 
-2. dispatch(action): nos permite solicitar cambio al estado, actulizarlo 
+1. subscribe(fn): nos permite subscribirnos al store para ser informado sobre el estado 
+2. dispatch(action): nos permite solicitar cambios al estado (actulizarlo) 
 3. getState(): nos permite obtener el estado actual 
 
 El store se crea con el método createStore(reducerFn)
