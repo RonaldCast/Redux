@@ -7,7 +7,8 @@ El store posee tres metodos
 El store se crea con el método createStore(reducerFn)
 
 1. la funcion reductora reciben un estado , una accion y retornan un nuevo estado 
-El stores siempre invoca la funcion redutora siempre que recibe una llamada al metodo dispatch(action) 
+El store siempre invoca la funcion redutora siempre que recibe una llamada al metodo dispatch(action).
+No hay llamadas a la API. No hay mutaciones. Sólo un cálculo.
 
 Actions: estos son los objectos que se le pasan al metodo dispatch
 ►se utiliza la llave type para definir la accion que se quiere realizar.
